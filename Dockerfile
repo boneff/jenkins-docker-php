@@ -18,7 +18,5 @@ RUN apt-get update \
     && apt-get -y --no-install-recommends install php7.4 php7.4-cli php-xml \
     && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 
-USER jenkins
-
 # Install Composer
 RUN /application/install-composer.sh

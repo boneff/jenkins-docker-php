@@ -15,7 +15,7 @@ RUN apt-get update \
     && export LC_ALL=en_US.UTF-8 \
     && export LANG=en_US.UTF-8 \
     && apt-get update \
-    && apt-get -y --no-install-recommends install php7.4 php7.4-cli php-xml \
+    && apt-get -y --no-install-recommends install php7.4 php7.4-cli php-xml php-mbstring \
     && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 
 # Install Composer
